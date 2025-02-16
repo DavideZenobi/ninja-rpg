@@ -14,6 +14,11 @@ config/name="Ninja RPG"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ScenesManager="*res://singletons/scenes_manager.gd"
+TransitionScreen="*res://utils/transition_screen/transition_screen.tscn"
+
 [dotnet]
 
 project/assembly_name="Ninja RPG"
