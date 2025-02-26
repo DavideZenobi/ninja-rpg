@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://op8eypi5sgws"]
+
+[ext_resource type="Texture2D" uid="uid://rnb1bbtxdl6a" path="res://art/Spring Tile.png" id="1_aufab"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cimr8"]
+texture = ExtResource("1_aufab")
+1:3/0 = 0
+0:3/0 = 0
+1:4/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_j5fwl"]
+sources/0 = SubResource("TileSetAtlasSource_cimr8")
+
+[node name="Town" type="Node2D"]
+
+[node name="Ground" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_j5fwl")
